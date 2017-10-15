@@ -103,7 +103,7 @@ class DeviceInfo(ServiceObj):
                 continue
 
             if self.check_ip(ip):
-                return ip.addr
+                return ip
         self.inc_counter("device_info.default_ip")
         return self._ip.addr
 
